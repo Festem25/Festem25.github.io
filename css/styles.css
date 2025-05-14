@@ -1000,41 +1000,42 @@ select:focus {
     flex-direction: column;
   }
 }
-/* --- Donation Page Styles --- */
+/* === Donation Page Styling (Refined to Match Main Site) === */
 
-/* Donation Tabs */
+/* Tabs */
 .donation-tabs {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
   justify-content: center;
-  margin: var(--spacing-lg) 0;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
 }
 
 .donation-tab {
-  padding: var(--spacing-sm) var(--spacing-md);
-  background-color: var(--background-dark);
-  border: none;
+  background: var(--background-dark);
+  border: 1px solid var(--text-light);
+  color: var(--text-dark);
+  padding: 0.5rem 1rem;
   border-radius: var(--radius-md);
   font-weight: 600;
-  color: var(--text-dark);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.donation-tab.active,
-.donation-tab:hover {
+.donation-tab:hover,
+.donation-tab.active {
   background-color: var(--primary);
   color: white;
+  border-color: var(--primary-dark);
 }
 
 /* Donation Sections */
 .donation-content {
   display: none;
-  background: white;
+  background-color: white;
+  padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  padding: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -1051,34 +1052,42 @@ select:focus {
 }
 
 .amount-option {
-  padding: var(--spacing-sm) var(--spacing-md);
-  border: 2px solid var(--text-light);
+  padding: 0.5rem 1.25rem;
   background-color: var(--background-dark);
+  border: 2px solid var(--text-light);
   border-radius: var(--radius-md);
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
+  color: var(--text-dark);
 }
 
 .amount-option:hover {
   background-color: var(--primary-light);
-  border-color: var(--primary);
   color: white;
+  border-color: var(--primary);
 }
 
-/* Custom Amount Inputs */
+.amount-option.custom {
+  font-style: italic;
+}
+
+/* Custom Amount Input */
 .custom-amount {
-  margin-bottom: var(--spacing-md);
+  margin: var(--spacing-md) 0;
 }
 
 .custom-amount-input-wrapper {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: 0.25rem;
 }
 
 .custom-amount input {
-  width: 150px;
+  width: 120px;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--text-light);
 }
 
 /* Project Options */
@@ -1088,15 +1097,19 @@ select:focus {
   margin-bottom: var(--spacing-md);
 }
 
-.project-option {
-  background-color: var(--background-dark);
+.project-label {
+  display: block;
+  background: var(--background-dark);
   border-radius: var(--radius-md);
   padding: var(--spacing-md);
-  transition: background-color 0.3s ease;
+  border: 1px solid var(--text-light);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .project-option input[type="radio"]:checked + .project-label {
   background-color: var(--primary-light);
+  border-color: var(--primary-dark);
   color: white;
 }
 
@@ -1105,8 +1118,9 @@ select:focus {
 }
 
 .project-goal {
+  font-size: 0.875rem;
   color: var(--text-medium);
-  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 /* Impact Section */
@@ -1118,29 +1132,44 @@ select:focus {
 }
 
 .impact-item {
-  background: white;
-  padding: var(--spacing-md);
+  background-color: white;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  padding: var(--spacing-md);
   text-align: center;
 }
 
 .impact-icon {
   font-size: 2rem;
   margin-bottom: var(--spacing-sm);
-}
-
-/* FAQ */
-.donation-faq .faq-item {
-  margin-bottom: var(--spacing-md);
-}
-
-.donation-faq h3 {
   color: var(--primary);
 }
 
-/* Responsive Enhancements */
-@media (max-width: 600px) {
+.impact-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* FAQ Section */
+.donation-faq h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.faq-item {
+  background-color: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.faq-item h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 640px) {
   .donation-tabs {
     flex-direction: column;
     align-items: stretch;
