@@ -766,3 +766,20 @@ function loadUserProfile() {
         });
     }
 }
+/* current page */
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the current URL path
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Find the corresponding link in the navigation menu
+  const navLinks = document.querySelectorAll("nav a"); // Adjust the selector based on your HTML structure
+
+  navLinks.forEach(link => {
+    if (link.getAttribute("href").includes(currentPage)) {
+      // Add a class to highlight the active page
+      link.classList.add("active");
+    }
+  });
+});
+
+/* menu */
