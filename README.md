@@ -7,6 +7,7 @@ https://festem25.github.io/
 
 📁 Project Structure
 
+.
 ├── css/
 │   ├── layout.css          # Styles for layout and positioning
 │   ├── simulations.css     # Styles specific to simulations
@@ -25,6 +26,7 @@ https://festem25.github.io/
 │
 ├── index.html              # Main landing page
 └── README.md               # Project documentation
+
 🚀 Features
 🌌 Astronomy simulation
 
