@@ -7,8 +7,9 @@ https://festem25.github.io/
 
 📁 Project Structure
 
-.
+
 ├── css/
+
 │   ├── layout.css          # Styles for layout and positioning
 │   ├── simulations.css     # Styles specific to simulations
 │   └── styles.css          # Global styles
