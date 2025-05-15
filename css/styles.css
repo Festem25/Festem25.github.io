@@ -1327,3 +1327,23 @@ nav a.active {
   }
 }
 
+.astronomy-section {  background-color: var(--background-dark);
+  padding: 4rem 0;  margin-top: 2rem;
+}
+.astronomy-section .section-title {  text-align: center;
+  font-size: 2rem;  margin-bottom: 0.5rem;
+  color: var(--text-dark);}
+.astronomy-section .section-subtitle {
+  text-align: center;  color: var(--text-medium);
+  margin-bottom: 2rem;  font-size: 1.1rem;
+}
+.astronomy-grid {  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  gap: 2rem;
+}
+.astro-card {  background-color: white;
+  padding: 1.5rem;  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);  color: var(--text-dark);
+}
+.astro-card img {
+  width: 100%;  border-radius: var(--radius-md);
+  margin-top: 1rem;}
