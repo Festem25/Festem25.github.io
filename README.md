@@ -54,6 +54,4 @@ Enable result export (e.g., graphs, images)
 
 Localization for multiple languages
 
-📄 License
-MIT License © 2025 Your Name
-
+@Musajon
