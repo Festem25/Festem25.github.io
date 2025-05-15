@@ -11,11 +11,16 @@ https://festem25.github.io/
 ├── css/
 
 │   ├── layout.css          # Styles for layout and positioning
+
 │   ├── simulations.css     # Styles specific to simulations
+
 │   └── styles.css          # Global styles
+
 │
 ├── js/
+
 │   ├── api.js              # Handles data fetching or backend interactions
+
 │   ├── astronomy.js        # Astronomy-related simulations (e.g. solar system)
 │   ├── auth.js             # User authentication logic
 │   ├── main.js             # Entry point / initialization script
