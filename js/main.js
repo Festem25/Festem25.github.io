@@ -496,12 +496,13 @@ function loadResources() {
     const resources = [
         {
             id: 1,
-            title: 'Introduction to Mechanics',
+            title: 'Randall Dewey Books',
             description: 'A comprehensive guide to classical mechanics, covering Newton\'s laws, energy, and momentum.',
             type: 'Textbook',
             topic: 'Mechanics',
-            url: '#',
-            views: 1245
+            url: '../Randall_Dewey_Knight_Physics_for_Scientists_and_Engineers_A_Strategic.pdf',
+            views: 1245,
+            image: '../photo_2025-05-14_16-57-38.jpg'
         },
         {
             id: 2,
@@ -510,7 +511,8 @@ function loadResources() {
             type: 'Article',
             topic: 'Electromagnetism',
             url: '#',
-            views: 873
+            views: 873,
+            image: 'https://img.freepik.com/free-vector/hand-drawn-flat-design-physics-book-cover_23-2149448360.jpg'
         },
         {
             id: 3,
@@ -519,14 +521,17 @@ function loadResources() {
             type: 'Video',
             topic: 'Quantum Physics',
             url: '#',
-            views: 2350
+            views: 2350,
+            image: 'https://images.newscientist.com/wp-content/uploads/2019/07/19100305/quantum_mechanicswk394y.jpg'
         }
     ];
     
     // Create HTML
     const resourcesHTML = resources.map(resource => `
         <div class="resource-card">
+        
             <div class="resource-thumbnail">
+            <img src="${resource.image}"" alt="AP Physics Textbook" class="collection-image">
                 <div class="placeholder-thumbnail">
                     <span class="resource-type">${resource.type}</span>
                 </div>
