@@ -1270,6 +1270,32 @@ nav a.active {
   margin-top: 0.5rem;
 }
 
+/* Question button */
+#ask-question-button {
+  background: var(--primary); /* Use primary color as the background */
+  color: var(--background); /* Contrast with background color */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  font-size: 16px; /* Adjust text size */
+  padding: 12px 24px; /* Adjust padding for better button size */
+  border: none; /* Remove borders */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+#ask-question-button:hover {
+  background: var(--primary-light); /* Lighter shade on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+#ask-question-button:active {
+  background: var(--primary-dark); /* Darker shade on click */
+  transform: scale(0.95); /* Slightly shrink on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
+}
+
 /* Impact Section */
 .impact-grid {
   display: grid;
